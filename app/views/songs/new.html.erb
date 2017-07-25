@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Submit New Romaji Lyrics</h1>
+      <%= form_for @song do |f| %>  
+        <div>  
+          <%= f.label :title %> 
+          <%= f.text_field :title, {class: "form-control"} %>
+        </div>
+        <div>
+          <%= f.label :artist %>
+          <%= f.text_field :artist, {class: "form-control"} %>
+        </div>
+        <div>
+          <%= f.label :genre %>
+          <%= f.text_field :genre, {class: "form-control"} %>
+        </div>
+        <div>
+          <%= f.label :lyrics %>
+          <%= f.text_field :lyrics, {class: "form-control", placeholder: "Please use line breaks for best results"} %>
+          <!-- <textarea class="form-control" rows="3"></textarea>  -->
+        </div>
+        <div> 
+          <%= f.submit "Submit New Lyrics" %>
+          <!-- <a class="btn btn-success" href="#" role="button">Submit</a>      -->
+        </div>
+    <% end %>
+    
+</body>
+</html>
