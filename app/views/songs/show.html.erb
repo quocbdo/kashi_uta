@@ -1,1 +1,15 @@
-<h1>Show a single song</h1>
+<h1>songs/:id, Show a single song</h1>
+
+  <p>Song Title:&nbsp;&nbsp;<%= @song.title %></p>
+  <p>Artist Name:&nbsp;&nbsp;<%= @song.artist %></p>
+  <p>Genre:&nbsp;&nbsp;<%= @song.genre %></p>
+  <p>Romaji Lyrics:&nbsp;&nbsp;<br><%= @song.lyrics %></p>  
+
+
+
+
+<%= link_to "Edit Lyrics", song_path(@song), method: :edit %>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<%= link_to "Delete Lyrics", song_path(@song), method: :delete, data: {confirm: "Permanently delete lyrics?"} %>
+<br>
+<%= link_to "Back to Home", root_path %> 

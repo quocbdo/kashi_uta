@@ -7,28 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Submit New Romaji Lyrics</h1>
+    <h1>Submit New Romaji Song Lyrics</h1>
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
       <%= form_for @song do |f| %>  
-        <div>  
+        <div class="form-group">  
           <%= f.label :title %> 
           <%= f.text_field :title, {class: "form-control"} %>
         </div>
-        <div>
+        <div class="form-group"> 
           <%= f.label :artist %>
           <%= f.text_field :artist, {class: "form-control"} %>
         </div>
-        <div>
+        <div class="form-group"> 
           <%= f.label :genre %>
           <%= f.text_field :genre, {class: "form-control"} %>
         </div>
         <div>
           <%= f.label :lyrics %>
-          <%= f.text_field :lyrics, {class: "form-control", placeholder: "Please use line breaks for best results"} %>
-          <!-- <textarea class="form-control" rows="3"></textarea>  -->
+          <%= f.text_area :lyrics, rows: 3, class: "form-control", placeholder: "Please format lyrics with line breaks" %>
         </div>
-        <div> 
-          <%= f.submit "Submit New Lyrics" %>
-          <!-- <a class="btn btn-success" href="#" role="button">Submit</a>      -->
+        <div class="form-group">
+          <%= f.submit "Submit New Lyrics", class: "btn btn-success" %>
         </div>
     <% end %>
     

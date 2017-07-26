@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   # before_action :set_user, only: [:show, :edit, :update, :destroy]
   # before_action :authorize, except: [:index, :show]
 
+  def index 
+  end
+
   def new
     @user = User.new
   end

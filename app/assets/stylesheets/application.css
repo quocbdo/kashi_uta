@@ -15,12 +15,12 @@
  */
 
  body {
-    font-size: 12pt;
+    font-size: 12pt; 
     font-family: 'Titillium Web', sans-serif;
     text-align: center;    
     background-color: #E7E8E7;
     padding: 50px 0px 0px 0px; 
-    /* padding-top: 80px; */
+    /* padding-top: 80px;  */
 }
 
 nav {
