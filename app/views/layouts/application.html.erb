@@ -19,19 +19,19 @@
   </head>
 
   <body class="container">
-     <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/pages/home">
-            <img alt="Brand" src="...">
+          <a class="navbar-brand" href="/">
+            ADD ICON HERE
+            <!-- <img alt="Brand" src="..."> -->
           </a>
           <ul class="nav navbar-nav">
             <li><%= link_to "All Songs", songs_path %></li>
             <li><%= link_to "Artists", artists_path %></li>
           </ul>
         </div>
-
-        <div class="container">
+      <div class="container">
           <ul class="nav navbar-nav navbar-right">
             <% if current_user %>
               <li class="navbar-text">Welcome, <%= current_user.name %></li>
@@ -40,6 +40,7 @@
               <li><%= link_to 'Log In', login_path %></li>
               <li><%= link_to 'Sign Up', new_user_path %></li>
             <% end %>
+            
           </ul>
         </div>
       </div>

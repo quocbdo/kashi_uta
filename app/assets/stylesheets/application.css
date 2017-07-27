@@ -1,49 +1,57 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+* vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 
- body {
-    font-size: 12pt; 
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center;    
-    background-color: #E7E8E7;
-    /* padding: 50px 0px 0px 0px;  */
-    padding-top: 70px;  
+body {
+  color: white;  
+  font-size: 12pt; 
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;    
+  background-image: url("bg_1.png");
+  background-repeat: repeat;
+  /* background-color: #E7E8E7; */
+  /* padding: 50px 0px 0px 0px;  */
+  padding-top: 70px;   
 }
 
- nav {
-    padding: 10px;
-    text-align: right;
+nav {
+  padding: 10px;
+  text-align: right;
 }
 
-  .navbar {
-    background: #52FFB8;   
+.navbar {
+  background: #52FFB8;   
 }
 
 .bg-inverse {
-    color: white;  
-    
-}
-.jumbotron{
-    color: white;
-    /* text-align: left;  */
-    padding-top: 20px;
-    background-size: cover; 
-    background-image: url("wedcamp.jpg")
+  color: white;
 }
 
- .album {
-    padding: 20px 20px 20px 20px;
+.field {
+  color: black;
+} 
+
+.jumbotron{
+  color: white;
+  /* text-align: left; */
+  /* padding-top: 20px; */
+  padding-bottom: 150px;
+  background-size: cover; 
+  background-image: url("jumbo_1.jpg"); 
+}
+
+.album {
+  padding: 20px 20px 20px 20px;
 }  
