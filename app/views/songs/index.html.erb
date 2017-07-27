@@ -1,37 +1,41 @@
-<h1>songs#index, List all songs</h1>
+<h1><%= @artist ? "Songs by #{@artist}" : "All Songs" %></h1>
 
-<% @songs.each do |song| %>
-<!-- <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h2><%= song.title %></h2>
-        <p><%= song.lyrics %></p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
+      <% @songs.each_with_index do |song, i| %>
+        <% if i % 2 == 0 %>
+          <a href="/songs/<%= song.id %>">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><%= song.title %></h3>
+              </div>
+              <div class="panel-body text-left">
+                <p>Artist:&nbsp;&nbsp;<%= song.artist %></p>
+                <p class="text-muted">Genre:&nbsp;&nbsp;<%= song.genre %></p>
+              </div>
+            </div>
+          </a>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <% @songs.each_with_index do |song, i| %>
+        <% if i % 2 != 0 %>
+          <a href="/songs/<%= song.id %>">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><%= song.title %></h3>
+              </div>
+              <div class="panel-body text-left">
+                <p>Artist:&nbsp;&nbsp;<%= song.artist %></p>
+                <p class="text-muted">Genre:&nbsp;&nbsp;<%= song.genre %></p>
+              </div>
+            </div>
+          </a>
+        <% end %>
+      <% end %>
     </div>
   </div>
-</div> -->
-
-  <!--bootstrap opt 2 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-    <h3 class="panel-title"><%= song.title %> by <%= song.artist %></h3>
-  </div>
-  <div class="panel-body">
-    <%= song.lyrics %>
-  </div>
-</div> -->
-
- <!-- plain -->
-  <div>
-    <%= song.title %>
-    <%= song.artist %>
-    <%= song.genre %>
-    <%= song.lyrics %>
-  </div>  
 <br>
-<% end %>
 
 <%= link_to "Back to Home", root_path %>

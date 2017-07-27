@@ -1,7 +1,14 @@
 class SongsController < ApplicationController
+    before_action :authorize, except: [:index, :show]
 
     def index
-        @songs = Song.all
+        if params[:artist]
+            @artist = params[:artist]
+            @songs = Song.where(artist: @artist)
+        else
+            @artist = nil
+            @songs = Song.all
+        end
     end
 
     def show
@@ -41,6 +48,10 @@ class SongsController < ApplicationController
         else
             render :edit
         end
+    end
+
+    def artists
+        @artists = Song.distinct(:artist).pluck(:artist)
     end
 
 private

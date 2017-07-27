@@ -1,12 +1,9 @@
 class SessionsController < ApplicationController
 
   def new
-    # Nothing to do here other than render new.html.erb
   end
 
   def create
-    # Not using an instance variable since
-    # we're not providing the user to a view
     user = User.find_by(email: params[:email])
     # Taking advantage of the && logical operator's
     # short-circuiting

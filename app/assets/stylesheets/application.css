@@ -19,31 +19,31 @@
     font-family: 'Titillium Web', sans-serif;
     text-align: center;    
     background-color: #E7E8E7;
-    padding: 50px 0px 0px 0px; 
-    /* padding-top: 80px;  */
+    /* padding: 50px 0px 0px 0px;  */
+    padding-top: 70px;  
 }
 
-nav {
+ nav {
     padding: 10px;
     text-align: right;
 }
 
-.navbar {
+  .navbar {
     background: #52FFB8;   
 }
 
 .bg-inverse {
-    color: white;
+    color: white;  
     
 }
 .jumbotron{
     color: white;
-    /* text-align: left; */
+    /* text-align: left;  */
     padding-top: 20px;
     background-size: cover; 
     background-image: url("wedcamp.jpg")
 }
 
-.album {
+ .album {
     padding: 20px 20px 20px 20px;
-}
+}  

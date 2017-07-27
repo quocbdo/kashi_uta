@@ -4,7 +4,6 @@
     <title>Kashi-Uta</title>
     <%= csrf_meta_tags %>
     
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,21 +18,32 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <nav class="navbar navbar-inverse bg-inverse navbar-fixed-top">
-      <div class="container">
-      <% if current_user %>
-        Welcome, <%= current_user.name %>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <%= link_to 'Log Out', session_path('dummy'), method: :delete %>
-      <% else %>
-        <%= link_to 'Log In', login_path %>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <%= link_to 'Sign Up', new_user_path %>
-      <% end %>
+  <body class="container">
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/pages/home">
+            <img alt="Brand" src="...">
+          </a>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "All Songs", songs_path %></li>
+            <li><%= link_to "Artists", artists_path %></li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <ul class="nav navbar-nav navbar-right">
+            <% if current_user %>
+              <li class="navbar-text">Welcome, <%= current_user.name %></li>
+              <li><%= link_to 'Log Out', session_path('dummy'), method: :delete %></li>
+            <% else %>
+              <li><%= link_to 'Log In', login_path %></li>
+              <li><%= link_to 'Sign Up', new_user_path %></li>
+            <% end %>
+          </ul>
+        </div>
       </div>
-    </nav>
-    
+    </nav>  
     <%= yield %>
   </body>
 </html>
