@@ -6,8 +6,8 @@ Kashi-Uta is an online social community for sharing Romaji song lyrics. For the 
 
 screenshots:
 ![alt tag](http://imgur.com/oqUhMVx.jpg "screenshot1")
-![alt tag](http://imgur.com/oqUhMVx.jpg "screenshot2")
-![alt tag](http://imgur.com/oqUhMVx.jpg "screenshot3")
+![alt tag](http://imgur.com/vhQ3f9A.jpg "screenshot2")
+![alt tag](http://imgur.com/5Wb6TJw.jpg "screenshot3")
 
 <h2>ii. Technologies Used</h2>
 * Ruby on Rails
