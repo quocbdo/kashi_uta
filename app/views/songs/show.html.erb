@@ -1,9 +1,8 @@
-<h1>songs/:id, Show a single song</h1>
-      <p>Song Title:&nbsp;&nbsp;<%= @song.title %></p>
-      <p>Artist Name:&nbsp;&nbsp;<%= @song.artist %></p>
-      <p>Genre:&nbsp;&nbsp;<%= @song.genre %></p>
-      <p>Romaji Lyrics:&nbsp;&nbsp;<br><%= @song.lyrics %></p>  
-    </div>
+<h1><%= @song.title %></h1>
+  <div>
+    <p>Artist:&nbsp;&nbsp;<%= @song.artist %></p>
+    <p>Genre:&nbsp;&nbsp;<%= @song.genre %></p>
+    <p>Romaji Lyrics:&nbsp;&nbsp;<br><%= @song.lyrics %></p>  
   </div>
 <% if @song.user == current_user %> 
   <%= link_to "Edit Lyrics", edit_song_path(@song) %>
