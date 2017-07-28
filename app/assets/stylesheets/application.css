@@ -35,6 +35,10 @@ nav {
   background: #52FFB8;   
 }
 
+.navbar-brand {
+  max-height: 20px;
+}
+
 .bg-inverse {
   color: white;
 }
