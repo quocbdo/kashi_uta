@@ -25,4 +25,4 @@ screenshots:
 Unregistered users can view all songs, but artist link is authorized for members only. Styling/formatting should also be updated to be consistent across the site.
 
 <h2>v. Ice Box Features</h2>
-Future updates include sorting by genre, uploading album images to corresponding song posts, and inclusion of English translations.
+Future updates include sorting by genre and user submissions, uploading album images to corresponding song posts, and inclusion of English translations.
