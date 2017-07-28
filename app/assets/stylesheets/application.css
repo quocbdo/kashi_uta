@@ -14,6 +14,9 @@
 *= require_self
 */
 
+label {
+  color: white;
+}
 body {
   color: white;  
   font-size: 12pt; 
