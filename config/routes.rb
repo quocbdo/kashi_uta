@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   
-  root to: 'pages#show', page: 'home'
-  # get '/pages/:page', to: 'pages#show'
+root to: 'pages#show', page: 'home'
 
   resources :songs
 
