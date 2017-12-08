@@ -15,10 +15,8 @@ screenshots:
 * Adobe Photoshop
 
 ## Getting Started
-[Kashi-Uta](https://kashi-uta.herokuapp.com/)
-
-[Trello](https://trello.com/b/mLnyoOEi/project-2-kashi-uta)
-
+View [Trello](https://trello.com/b/mLnyoOEi/project-2-kashi-uta)
+Visit [Kashi-Uta](https://kashi-uta.herokuapp.com/)
 ## Unsolved Problems
 Unregistered users can view all songs, but artist link is authorized for members only. Styling/formatting should also be updated to be consistent across the site.
 
