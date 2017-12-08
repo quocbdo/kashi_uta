@@ -16,7 +16,7 @@ screenshots:
 
 ## Getting Started
 View [Trello](https://trello.com/b/mLnyoOEi/project-2-kashi-uta)
-
+<br/>
 Visit [Kashi-Uta](https://kashi-uta.herokuapp.com/)
 
 ## Unsolved Problems
