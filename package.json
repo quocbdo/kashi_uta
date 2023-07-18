@@ -1,5 +1,7 @@
 {
   "name": "kashi_uta",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bcrypt": "^5.1.0"
+  }
 }
